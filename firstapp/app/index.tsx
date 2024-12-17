@@ -1,15 +1,21 @@
-import { Text, View } from "react-native";
+import { Text, View,ImageBackground} from "react-native";
 
 export default function Index() {
   return (
-    <View
+    <ImageBackground source={require("../assets/images/loshan.jpg")}
       style={{
         flex: 1,
         justifyContent: "center",
         alignItems: "center",
+        opacity:0.5,
       }}
     >
-      <Text>hello Loshan..!!</Text>
-    </View>
+      <Text
+      style={{
+        fontSize: 50,
+      }}
+      >
+        hello Loshan..!!</Text>
+    </ImageBackground>
   );
 }
